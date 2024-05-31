@@ -10,7 +10,7 @@ RUN pip3 install -r requirements.txt
 
 #Commandes RUN combinés, BONNE PRATIQUE
 
-RUN apt-get update && apt-get-install -y
+RUN apt-get update && apt-get install -y
 
 #Supprimer les caches d'instalation des packages
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
