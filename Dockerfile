@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 #Supprimer les fichiers temporaires
-RUN rm rf /tmp/*
+RUN rm -rf /tmp/*
 
 #Supprimer les logs
 RUN rm rf /var/log/*
