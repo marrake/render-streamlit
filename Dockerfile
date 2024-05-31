@@ -19,7 +19,7 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN rm -rf /tmp/*
 
 #Supprimer les logs
-RUN rm rf /var/log/*
+RUN rm -rf /var/log/*
 
 CMD ["python3", "main.py"]
 
