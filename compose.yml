@@ -9,7 +9,6 @@ services:
     tty: true
     ports:
       #HTTP
-      - target:8501
-      - published:8501
+      - target: 8501
+      - published: 8501
       - protocol: tcp
-      
